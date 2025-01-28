@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Empleados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista de Empleados</h1>
+    <table id="empleadosTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Salario</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los datos se llenarán aquí mediante JavaScript -->
+        </tbody>
+    </table>
+
+    <h2>Agregar/Editar Empleado</h2>
+    <form id="empleadoForm">
+        <input type="hidden" id="empleadoId"> <!-- Oculto para la edición -->
+        <input type="text" id="empleadoNombre" placeholder="Nombre" required>
+        <input type="number" id="empleadoEdad" placeholder="Edad" required>
+        <input type="number" id="empleadoSalario" placeholder="Salario" required>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <div id="errorMessage" style="color: red;"></div>
+    <div id="successMessage" style="color: green;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
