@@ -1,3 +1,8 @@
+
+// URL del backend
+     const API_URL = "https://empleados.onrender.com/empleados";   // agregado por VN
+
+
 async function obtenerDatos() {
     try {
         const response = await fetch('/api/empleados');
